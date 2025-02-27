@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "day3",
+			"path": "."
+		},
+		{
+			"name": "images",
+			"path": "../../../Tutorials/30DaysOfJavaScript/Day3/images"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "day3"
+	}
+}
