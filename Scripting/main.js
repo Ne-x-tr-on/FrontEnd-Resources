@@ -216,17 +216,16 @@
 // console.log(person.age);
 
 
-// function Car(Name,Make,Year){
-//   this.Name = Name,
-//   this.Make = Make,
-//   this.Year = Year
-//   this.drive = function(){
-//     console.log(`You drive a ${Year} car do you?`);
-//   }
-// }
+// export  function Car(Name,Make,Year){
+//           this.Name = Name,
+//           this.Make = Make,
+//           this.Year = Year
+//           this.drive = function(){
+//             console.log(`You drive a ${Year} car do you?`);
+//           }
+//         }
 
-// const myCar = new Car("Toyota","Toyota",2019);
-// myCar.drive();
+       
 
 
 
@@ -246,39 +245,90 @@
 
 
 
+// class MathUtil{
+//   static PI = 3.14159;
+
+//   static getArea(radius){
+//     return radius*radius*this.PI
+//   }
+//   static getDiameter(radius){
+//     return 2*radius;
+//   }
+//   static getCircleCircumference(radius){
+//     return this.PI*radius*2
+//   }
+// }
+
+// console.log(MathUtil.PI);
+// console.log(MathUtil.getArea(10));
+// console.log(MathUtil.getDiameter(10));
+
+// export function Car(car){
+//   return car;
+  
+// }
+
+// export function getCircleArea(radius) {
+//   return Math.PI * radius * radius;
+// }
+
+
+// document.addEventListener("keydown", event =>{
+//   console.log(event.key);
+// });
+// document.addEventListener("keyup", event => {
+// console.log(event.key);
+// });
 
 
 
+function walkthedog(){
+  return new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+      resolve("walk the dog");
+    },2500);
+  });
+}
 
 
+function takethetrash(){
+  return new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+      resolve("Take the trash out");
+    },2500);
+  });
+}
 
+function cleanthekitchen(){
+  return new Promise((resolve,reject) =>{
+    setTimeout(()=>{
+      resolve("Clean the kitchen");
+    },2500);
+  });
+}
+walkthedog().then(value=>{
+  console.log(value);
+  return takethetrash();
+})
+.then(value =>{
+  console.log(value);
+  return cleanthekitchen();
+})
+.then(value =>{
+  console.log(value);
+});
 
+async function doChores(){
+  const walkDogResult = await walkthedog();
+  console.log(walkDogResult);
 
+  const cleanKitchenResult = await cleanthekitchen();
+  console.log(cleanKitchenResult);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  const takeTrashResult = await takethetrash();
+  console.log(takeTrashResult); 
+}
+doChores();
 
 
 

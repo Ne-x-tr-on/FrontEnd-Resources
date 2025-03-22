@@ -10,10 +10,7 @@
 
 
 
-// const numbers = [1, 2, 3, 4];
-
-// numbers.forEach(function(number) {
-//   console.log(number * 2); // Output: 2, 4, 6, 8
-// });
-
-
+//  
+// // import { getCircleArea } from './main.js';
+// const area = getCircleArea(10);
+// console.log(area);  // Outputs: ~314.159 (π * 10²)
