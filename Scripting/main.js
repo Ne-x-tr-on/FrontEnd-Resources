@@ -282,53 +282,53 @@
 
 
 
-function walkthedog(){
-  return new Promise((resolve,reject)=>{
-    setTimeout(()=>{
-      resolve("walk the dog");
-    },2500);
-  });
-}
+// function walkthedog(){
+//   return new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//       resolve("walk the dog");
+//     },2500);
+//   });
+// }
 
 
-function takethetrash(){
-  return new Promise((resolve,reject)=>{
-    setTimeout(()=>{
-      resolve("Take the trash out");
-    },2500);
-  });
-}
+// function takethetrash(){
+//   return new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//       resolve("Take the trash out");
+//     },2500);
+//   });
+// }
 
-function cleanthekitchen(){
-  return new Promise((resolve,reject) =>{
-    setTimeout(()=>{
-      resolve("Clean the kitchen");
-    },2500);
-  });
-}
-walkthedog().then(value=>{
-  console.log(value);
-  return takethetrash();
-})
-.then(value =>{
-  console.log(value);
-  return cleanthekitchen();
-})
-.then(value =>{
-  console.log(value);
-});
+// function cleanthekitchen(){
+//   return new Promise((resolve,reject) =>{
+//     setTimeout(()=>{
+//       resolve("Clean the kitchen");
+//     },2500);
+//   });
+// }
+// walkthedog().then(value=>{
+//   console.log(value);
+//   return takethetrash();
+// })
+// .then(value =>{
+//   console.log(value);
+//   return cleanthekitchen();
+// })
+// .then(value =>{
+//   console.log(value);
+// });
 
-async function doChores(){
-  const walkDogResult = await walkthedog();
-  console.log(walkDogResult);
+// async function doChores(){
+//   const walkDogResult = await walkthedog();
+//   console.log(walkDogResult);
 
-  const cleanKitchenResult = await cleanthekitchen();
-  console.log(cleanKitchenResult);
+//   const cleanKitchenResult = await cleanthekitchen();
+//   console.log(cleanKitchenResult);
 
-  const takeTrashResult = await takethetrash();
-  console.log(takeTrashResult); 
-}
-doChores();
+//   const takeTrashResult = await takethetrash();
+//   console.log(takeTrashResult); 
+// }
+// doChores();
 
 
 
