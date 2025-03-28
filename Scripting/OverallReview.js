@@ -187,14 +187,252 @@
 // };
 // console.log(grader(80));
 
-function greet(){
-  console.log("Hello, World!");
-}
-greet();
+// function isValid(email){
+//   if (email.includes("@") && email.includes ("."))
+//     return true;
+//   else{
+//     return false;
+//   }
+// }
+// console.log(isValid("nex@2.com"));
+
+// let fruits = ["apple", "banana", "cherry"];
+// fruits.push("Mango");
+// fruits.pop();
+// fruits.unshift("Mango")
+// console.log(fruits.length);
+// console.log(fruits);
+// fruits.sort().reverse();
+
+// let numbers = [1,2,3,4,5,6,7,8,9];
+// let max = Math.max(...numbers);
+// console.log(max);
+
+// console.log(...fruits);
+
+// let join = [...fruits].join("-");
+// console.log(join);
+
+// function hello(callback){
+//   console.log("GoodMorning");
+//   callback();
+// }
+
+// function greet(){
+//   console.log("GoodEvening");
+// }
+
+// hello(greet);
+
+// function sum(callback,x,y){
+//   let results = x+y;
+//   callback(results);
+// }
+
+// function display(results){
+//   console.log(results);
+// }
+
+// sum(display,2,3);
+
+// let numbers = [1,2,3,4,5,6,7];
+
+// numbers.forEach(display);
+
+// function display(element){
+//   console.log(element);
+// }
+
+// display(()=>{
+//   console.log(element);
+// });
 
 
-function happybirthday(name,age){
-    console.log(`HappyBirthday ${name}, you are ${age} years old`);
-}
+// let fruits = ["apple", "banana", "cherry"];
+// fruits.forEach(capitalize);
 
-happybirthday("Newton", 19);
+// function capitalize(element,index,array){
+//   console.log(array[index]=element.charAt(0).toUpperCase()+ element.slice(1));
+// }
+
+
+//.map method
+// let numbers = [1,2,3,4,5];
+// const square = numbers.map(squares);
+// console.log(square);
+
+// function squares(element){
+// return Math.pow(element,2)
+// };
+
+//.filter method
+//.reduce method
+
+// let numbers = [1,2,3,4,5];
+// const prices = numbers.reduce(sum);
+// console.log(prices);
+
+// function sum(accumulator, currentElement){
+//   return accumulator + currentElement;
+// }
+
+// const SchoolName = [
+//   {
+//   firstName: "John",
+//   lastName: "Doe",
+//   SchoolName: "Gitungano"
+// },
+//   {
+//     firstName: "Jane",
+//     lastName: "Doe",
+//     SchoolName: "Gitungano"
+//   }
+// ]
+// console.log(SchoolName[0].firstName);
+
+//Constructor
+// function car(model,type,year){
+//   this.model= model,
+//   this.type = type,
+//   this.year = year,
+//   this.drive = function(){
+//     console.log("Vroom");
+//   }
+// }
+
+// const car1 =new car("Any","Ford",2025);
+// console.log(car1)
+// car1.drive();
+
+// class product{
+//   constructor(name,price,quantity){
+//     this.name= name,
+//     this.price=price,
+//     this.quantity=quantity
+//   }
+//   displayproduct(){
+//     console.log(this.name,this.price,this.quantity);
+//   }
+// }
+// const product1 = new product("Laptop",1000,5);
+// product1.displayproduct();
+
+
+//Static
+// class product {
+//   static name = "Laptop";
+//   static price = 1000;
+//   static quantity = 5;
+//   static getPrice(){
+//     return product.price*product.quantity;
+//   }
+// }
+// console.log(product.getPrice());
+
+// class Animal{
+//   alive = true
+// }
+
+// class Rabbit extends Animal{
+//   constructor(name,age){
+//     super(name,age)
+//     this.name= name,
+//     this.age = age
+    
+//   }
+// }
+// // Rabbit.alive
+// const report = new Rabbit("Eliza",1);
+// console.log(report);
+
+// class Rectangle{
+//   constructor(width,height){
+//     this.width = width,
+//     this.height=height
+//   }
+// }
+
+// class Circle {
+//   constructor(radius) {
+//     this._radius = radius; 
+//   }
+
+//   get area() {
+//     return Math.PI * this._radius ** 2;
+//   }
+
+//   set radius(newRadius) {
+//     if (newRadius >= 0) {
+//       this._radius = newRadius;
+//     } else {
+//       console.log("Radius must be positive");
+//     }
+//   }
+// }
+
+// const circle = new Circle(5);
+// console.log(circle.area); // 78.54...
+// circle.radius = 0; 
+
+// const user = {
+//   firstName : "Nextron",
+//   lastName: "Manyeki",
+//   age: 19,
+//   job: "Director",
+// }
+// function displayPerson({firstName,lastName,age,job}){
+//   console.log(firstName);
+// }
+// displayPerson(user);
+
+// const report = console.log((user.age),(user.firstName),(user.lastName));
+
+// function dashboard(){
+//   let user = 0;
+// function users(){
+//     user++;
+//     console.log(user);
+//   }
+// function land(){
+//     console.log("Crash landing Position")
+//   }
+//   return {users,land};
+// }
+  
+// const myDashBoard = dashboard();
+// myDashBoard.users();
+// myDashBoard.users();
+// myDashBoard.land();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
